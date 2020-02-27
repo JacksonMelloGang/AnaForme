@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Login</title>
+    <link src="style.css" type="css/text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 offset-m3">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title black-text">Fortnite Cup</span>
+                        <br>
+                        <form action="insert/forminsert.php" method="post">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input type="email" name="mail" placeholder="Email" id="mail" required>
+                                    <label for="mail" class="active">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input type="text" name="tl" placeholder="Nom du Chef d'equipe" id="tl" required>
+                                    <label for="tl" class="active">Chef de l'equipe</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input type="text" name="tm" placeholder="Membre de l'equipe" id="tm" required>
+                                    <label for="tm" class="active">Membre de l'equipe</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input type="text" name="disctl" placeholder="Discord du Chef de l'equipe (xxxx#1234)" id="disctl" required>
+                                    <label for="disctl" class="active">Discord du Chef de l'equipe</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input type="text" name="disctm" placeholder="Discord de la 2e Personne (xxxx#1234)" id="disctm" required>
+                                    <label for="disctm" class="active">Discord de la 2e Personne</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <select name="combobox" id="combobox" class="browser-default">
+                                        <option style="background-color: gray; color: white;" value="0" disabled>Selectionner une option</option>
+                                        <option value="1">Oui</option>
+                                        <option value="0">Non</option>
+                                    </select>
+                                    <label for="combobox" class="active">Etes vous sur le discord</label>
+                                </div>
+                            </div>
+                            <input id="post" type="submit" class="btn" value="Poster">
+                            <style>
+                                body {
+                                    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                                    background-size: 400% 400%;
+                                    animation: gradient 15s ease infinite;
+                                }
+
+                                @keyframes gradient {
+                                    0% {
+                                        background-position: 0% 50%;
+                                    }
+                                    50% {
+                                        background-position: 100% 50%;
+                                    }
+                                    100% {
+                                        background-position: 0% 50%;
+                                    }
+                                }
+                            </style>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+</body>
